@@ -19,8 +19,8 @@ public class HW1_5
             n = n + tem/m;
             candies = n;
             tem = tem/m;
-            System.out.println("tem/m: " + tem/m);
-            System.out.println("candies: " + candies);
+            //System.out.println("tem/m: " + tem/m);
+            //System.out.println("candies: " + candies);
         }
         System.out.println("n=" + inputs[0] + "; m=" + m + "; No. of candies=" + candies);
     }
