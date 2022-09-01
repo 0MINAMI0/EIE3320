@@ -4,6 +4,7 @@ public class HW1_3 {
             int data = 0;
             int flag = 0;
             int i = 1;
+            System.out.println("The first 100 triangular numbers are:");
             for (; i <= 100;i++){
                 data = data +i;
                 System.out.print(data + " ");
