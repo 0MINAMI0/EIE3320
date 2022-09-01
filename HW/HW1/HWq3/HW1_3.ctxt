@@ -1,5 +1,7 @@
 #BlueJ class context
 comment0.target=HW1_3
-comment1.params=args
-comment1.target=void\ main(java.lang.String[])
-numComments=2
+comment1.params=n
+comment1.target=int\ getTriangularNumber(int)
+comment2.params=args
+comment2.target=void\ main(java.lang.String[])
+numComments=3
