@@ -1,28 +1,35 @@
 import java.util.*;
 public class Rectangle
 {
-    public static double creates_rec(double width, double height) {
-        double area = width * height;
-        return area;
+    public static void creates_rec(double width, double height) {
+        System.out.println("The area of a rectangle with width " + width + " and height " + height + " is " + getArea(width, height));
+        System.out.print("The perimeter of this rectangle is " + getPerimeter(width, height));
     }
+    
     public double creates_default_rec() {
         double width = 1;
         double height = 1;        
         return width * height;
     }
+    
+    static double getArea(double width, double height){
+        return width * height;
+    }
+    
+    static double getPerimeter(double width, double height) {
+        return width*2+height*2;
+    }
+    
    public static void main(String[] args) {
         System.out.print("Input the width and height: ");
         Scanner input = new Scanner(System.in);
         double[] inputs = new double[2];
         for(int i = 0; i < 2; i++)
         {
-            inputs[i] = input.nextInt();
+            inputs[i] = input.nextDouble();
         }
         double width = inputs[0];
         double height = inputs[1];
-        
-        System.out.print("The area of a rectangle with width " + width + " and height " + height + " is " + creates_rec(width, height));
-
-       
+        creates_rec(width, height);
    }
 }

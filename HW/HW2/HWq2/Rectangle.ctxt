@@ -1,9 +1,13 @@
 #BlueJ class context
 comment0.target=Rectangle
 comment1.params=width\ height
-comment1.target=double\ creates_rec(double,\ double)
+comment1.target=void\ creates_rec(double,\ double)
 comment2.params=
 comment2.target=double\ creates_default_rec()
-comment3.params=args
-comment3.target=void\ main(java.lang.String[])
-numComments=4
+comment3.params=width\ height
+comment3.target=double\ getArea(double,\ double)
+comment4.params=width\ height
+comment4.target=double\ getPerimeter(double,\ double)
+comment5.params=args
+comment5.target=void\ main(java.lang.String[])
+numComments=6
