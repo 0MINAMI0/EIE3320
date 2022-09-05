@@ -1,9 +1,9 @@
 #BlueJ package file
-dependency1.from=ClockDisplay
-dependency1.to=NumberDisplay
+dependency1.from=MyClock
+dependency1.to=ClockDisplay
 dependency1.type=UsesDependency
-dependency2.from=MyClock
-dependency2.to=ClockDisplay
+dependency2.from=ClockDisplay
+dependency2.to=NumberDisplay
 dependency2.type=UsesDependency
 editor.fx.0.height=728
 editor.fx.0.width=800
