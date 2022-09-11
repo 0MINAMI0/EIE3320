@@ -7,14 +7,7 @@ public class Course
         courseName = name;
         testMarks = result;
     }
-    
-    /*public String[] toString(){
-        String[] info = new String[2];
-        String result=String.valueOf(testMarks);
-        info[0] = courseName;
-        info[1] = result;
-        return info;
-    }*/
+
     public String toString(){
         return ("name is " + courseName + " ; testMarks is: " + testMarks);
     }}
