@@ -9,9 +9,6 @@ public class UniversityStudent
         courseList = list;
     }
     public void print(){
-        /*System.out.println(studentName);
-        System.out.println(courseNumber);
-        System.out.println(courseList);*/
         Course student_t = new Course(studentName,courseNumber);
         System.out.println(student_t.toString() + " Course list is: " + courseList);
     }
