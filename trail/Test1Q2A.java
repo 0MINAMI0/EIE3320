@@ -13,4 +13,5 @@ public class Test1Q2A
  listB[2] = new Course("EIE3320", 52);
  UniversityStudent studentB = new UniversityStudent("Mary", 3, listB);
  studentB.print();
- } }
+ } 
+}

@@ -7,10 +7,13 @@ public class UniversityStudent
     public UniversityStudent(String name, int number, Course[] list){
         studentName = name;
         courseNumber = number;
-        courseList = list;
+        for (int i = 0; i < number; i++) {
+            courseList[i] = list[i];
+            System.out.println(courseList[i]);
+        };        
     }
     public void print(){
         System.out.println("Student Name: " + studentName);
-        //System.out.println(list.toString());
+
     }
 }
