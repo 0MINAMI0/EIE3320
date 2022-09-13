@@ -1,0 +1,16 @@
+import  java.util.Arrays;
+public class UniversityStudent
+{
+    String studentName;
+    int courseNumber;
+    Course[] courseList = new Course[10];
+    public UniversityStudent(String name, int number, Course[] list){
+        studentName = name;
+        courseNumber = number;
+        courseList = list;
+    }
+    public void print(){
+        System.out.println("Student Name: " + studentName);
+        //System.out.println(list.toString());
+    }
+}
