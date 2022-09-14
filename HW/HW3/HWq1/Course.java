@@ -9,6 +9,6 @@ public class Course
     }
 
     public String toString(){
-        return ("name is " + courseName + " ; testMarks is: " + testMarks);
+        return (courseName + ", " + testMarks);
     }}
 
