@@ -24,7 +24,7 @@ public class Hw1
                 }
                 
                 for ( index = 1; index < (i + 1); index++){
-                        if (index > 10)
+                        if (index > 9)
                         System.out.print(" " + index);
                         else
                         System.out.print("  " + index);
