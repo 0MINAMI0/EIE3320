@@ -29,7 +29,7 @@ public class Hw1
                         else
                         System.out.print("  " + index);
                 }
-                System.o    ut.print("\n");
+                System.out.print("\n");
             }
     }
 }
