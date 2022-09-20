@@ -1,3 +1,4 @@
+//LYU Hao 20042543d
 public class Test1Q2A
 {
  public static void main(String[] args)
