@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Auction()
+comment0.text=\r\n\ Create\ a\ new\ auction.\r\n
+comment1.params=description
+comment1.target=void\ enterLot(java.lang.String)
+comment1.text=\r\n\ Enter\ a\ new\ lot\ into\ the\ auction.\r\n\ Lots\ can\ only\ by\ entered\ into\ the\ auction\ by\ an\r\n\ Auction\ object.\r\n\ @param\ description\ A\ description\ of\ the\ lot.\r\n
+comment2.params=
+comment2.target=void\ showLots()
+comment2.text=\r\n\ Show\ the\ full\ list\ of\ lot\ numbers\ and\ lot\ descriptions\ in\r\n\ this\ auction.\ Include\ any\ details\ of\ the\ highest\ bids.\r\n
+comment3.params=number
+comment3.target=Lot\ getLot(int)
+comment3.text=\r\n\ Return\ the\ lot\ with\ the\ given\ number.\ Return\ null\r\n\ if\ a\ lot\ with\ this\ number\ does\ not\ exist.\r\n\ @param\ number\ The\ number\ of\ the\ lot\ to\ return.\r\n
+numComments=4

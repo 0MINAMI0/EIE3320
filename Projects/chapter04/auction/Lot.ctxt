@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.params=number\ description
+comment0.target=Lot(int,\ java.lang.String)
+comment0.text=\r\n\ Construct\ a\ Lot,\ setting\ its\ number\ and\ description.\r\n\ @param\ number\ The\ lot\ number.\r\n\ @param\ description\ A\ description\ of\ this\ lot.\r\n
+comment1.params=bidder\ value
+comment1.target=void\ bidFor(Person,\ long)
+comment1.text=\r\n\ Attempt\ to\ bid\ for\ this\ lot.\ A\ successful\ bid\r\n\ must\ have\ a\ value\ higher\ than\ any\ existing\ bid.\r\n\ @param\ bidder\ Who\ is\ bidding.\r\n\ @param\ value\ The\ value\ of\ the\ bid.\r\n
+comment2.params=
+comment2.target=int\ getNumber()
+comment2.text=\r\n\ @return\ The\ lot's\ number.\r\n
+comment3.params=
+comment3.target=java.lang.String\ getDescription()
+comment3.text=\r\n\ @return\ The\ lot's\ description.\r\n
+comment4.params=
+comment4.target=Bid\ getHighestBid()
+comment4.text=\r\n\ @return\ The\ highest\ bid\ for\ this\ lot.\ This\ could\ be\ null\ if\r\n\ \ \ \ \ \ \ \ \ there\ are\ no\ current\ bids.\r\n
+comment5.params=highestBid
+comment5.target=void\ setHighestBid(Bid)
+comment5.text=\r\n\ @param\ highestBid\ The\ new\ highest\ bid.\r\n
+numComments=6
