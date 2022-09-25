@@ -1,10 +1,4 @@
-/**
- * The CD class represents a CD object. Information about the 
- * CD is stored and can be retrieved.
- * 
- * @author Michael Kolling and David J. Barnes
- * @version 2002-05-02
- */
+//LYU Hao 20042543d
 public class CD
 {
     private String title;

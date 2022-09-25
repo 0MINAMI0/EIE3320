@@ -1,10 +1,4 @@
-/**
- * The Video class represents a video object. Information about the 
- * video is stored and can be retrieved.
- * 
- * @author Michael Kolling and David J. Barnes
- * @version 2002-05-02
- */
+//LYU Hao 20042543d
 public class Video 
 {
     private String title;
