@@ -12,6 +12,7 @@ public class Database
     {
         cds = new ArrayList();
         videos = new ArrayList();
+        videoGames = new ArrayList();
     }
     
     /**
