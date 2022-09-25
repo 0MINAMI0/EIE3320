@@ -59,9 +59,9 @@ public class VideoGame
         } else {
             System.out.println("Got it: No");
         }
-        System.out.println("Playing time: " + playingTime);
-        System.out.println("Comment: " + comment);
         System.out.println("Platform: " + platform);
+        System.out.println("Comment: " + comment);
         System.out.println("No. of players: " + numberOfPlayers);
+        System.out.println("Playing time: " + playingTime);
     }
 }
