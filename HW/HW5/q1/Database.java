@@ -36,6 +36,12 @@ public class Database
     }
 
     Item searchByTitle(String theTitle){
-        return items;
+        ArrayList<Item> item2=new ArrayList<Item>();
+        for(Iterator iter = items.iterator(); iter.hasNext();){
+            Item itemsloop = (Item)iter.next();
+            item2.add(itemsloop);
+            
+        }
+        return item2.get(0);
     }
 }
