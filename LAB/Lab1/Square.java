@@ -1,6 +1,6 @@
 import java.awt.*;
 
-public class Square
+public class Square extends Shape
 {
     private float length;
     
@@ -9,19 +9,19 @@ public class Square
     }
     
     public Square(float l){
-        
+        length = l;
     }
     
     public void readShape(){
         
     }
     
-    public void computeArea(){
-        
+    public void computerArea(){
+        area = length*length;
     }
     
-    public void computePerimeter(){
-        
+    public void computerPerimeter(){
+        perimeter = length*4;
     }
     
     public void displayShape(){
