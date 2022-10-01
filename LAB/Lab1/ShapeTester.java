@@ -12,6 +12,9 @@ public class ShapeTester
         System.out.println("* Press 'x' - EXIT                         *");
         System.out.println("********************************************");
         Scanner input = new Scanner(System.in);
+        Switch (input){
+            
+        }
         }
     }
 }
