@@ -4,10 +4,15 @@ import java.util.Iterator;
 public class Database
 {
     private ArrayList<Item> items;
+
+    /**
+     * Construct an empty Database.
+     */
     public Database()
     {
         items = new ArrayList<Item>();
     }
+
     /**
      * Add an item to the database.
      */
@@ -29,10 +34,14 @@ public class Database
             System.out.println();   // empty line between items
         }
     }
-    
+
     Item searchByTitle(String theTitle){
-        if (items.contains("Miss You Mix")){
+        ArrayList<Item> item2=new ArrayList<Item>();
+        for(Iterator iter = items.iterator(); iter.hasNext();){
+            Item itemsloop = (Item)iter.next();
+            item2.add(itemsloop);
             
         }
+        return item2.get(0);
     }
 }
