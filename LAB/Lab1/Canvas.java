@@ -3,22 +3,9 @@ import java.awt.*;
 import java.util.List;
 import java.util.*;
 
-/**
- * Canvas is a class to allow for simple graphical drawing on a canvas.
- * This is a modification of the general purpose Canvas, specially made for
- * the BlueJ "shapes" example. 
- *
- * @author: Bruce Quig
- * @author: Michael Kolling (mik)
- *
- * @version: 1.6 (shapes)
- */
+
 public class Canvas
 {
-    // Note: The implementation of this class (specifically the handling of
-    // shape identity and colors) is slightly more complex than necessary. This
-    // is done on purpose to keep the interface and instance fields of the
-    // shape objects in this project clean and simple for educational purposes.
 
     private static Canvas canvasSingleton;
 
@@ -35,7 +22,6 @@ public class Canvas
         return canvasSingleton;
     }
 
-    //  ----- instance part -----
 
     private JFrame frame;
     private CanvasPane canvas;
@@ -75,8 +61,7 @@ public class Canvas
     public void setVisible(boolean visible)
     {
         if(graphic == null) {
-            // first time: instantiate the offscreen image and fill it with
-            // the background colour
+
             Dimension size = canvas.getSize();
             canvasImage = canvas.createImage(size.width, size.height);
             graphic = (Graphics2D)canvasImage.getGraphics();
@@ -87,16 +72,8 @@ public class Canvas
         frame.setVisible(visible);
     }
 
-    /**
-     * Draw a given shape onto the canvas.
-     * @param  referenceObject  an object to define identity for this shape
-     * @param  color            the color of the shape
-     * @param  shape            the shape object to be drawn on the canvas
-     */
-     // Note: this is a slightly backwards way of maintaining the shape
-     // objects. It is carefully designed to keep the visible shape interfaces
-     // in this project clean and simple for educational purposes.
-    public void draw(Object referenceObject, String color, Shape shape)
+
+    public void draw(Object referenceObject, String color, java.awt.Shape shape)
     {
         objects.remove(referenceObject);   // just in case it was already there
         objects.add(referenceObject);      // add at the end
@@ -104,13 +81,10 @@ public class Canvas
         redraw();
     }
  
-    /**
-     * Erase a given shape's from the screen.
-     * @param  referenceObject  the shape object to be erased 
-     */
+
     public void erase(Object referenceObject)
     {
-        objects.remove(referenceObject);   // just in case it was already there
+        objects.remove(referenceObject);   
         shapes.remove(referenceObject);
         redraw();
     }
@@ -177,7 +151,7 @@ public class Canvas
         Color original = graphic.getColor();
         graphic.setColor(backgroundColour);
         Dimension size = canvas.getSize();
-        graphic.fill(new Rectangle(0, 0, size.width, size.height));
+        graphic.fill(new java.awt.Rectangle(0, 0, size.width, size.height));
         graphic.setColor(original);
     }
 
@@ -202,10 +176,10 @@ public class Canvas
      */
     private class ShapeDescription
     {
-        private Shape shape;
+        private java.awt.Shape shape;
         private String colorString;
 
-        public ShapeDescription(Shape shape, String color)
+        public ShapeDescription(java.awt.Shape shape, String color)
         {
             this.shape = shape;
             colorString = color;

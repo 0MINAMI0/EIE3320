@@ -6,9 +6,10 @@ public abstract class Shape
 abstract public void readShape();
 
 // To compute the shape’s area
-abstract public void computerArea();
+abstract public void computeArea();
 // To computer the shape’s perimeter
- abstract public void computerPerimeter();
+ abstract public void computePerimeter();
 // To display the area and perimeter of the shape
  abstract public void displayShape();
+ 
 }
