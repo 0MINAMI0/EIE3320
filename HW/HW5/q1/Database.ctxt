@@ -2,7 +2,6 @@
 comment0.target=Database
 comment1.params=
 comment1.target=Database()
-comment1.text=\r\n\ Construct\ an\ empty\ Database.\r\n
 comment2.params=theItem
 comment2.target=void\ addItem(Item)
 comment2.text=\r\n\ Add\ an\ item\ to\ the\ database.\r\n

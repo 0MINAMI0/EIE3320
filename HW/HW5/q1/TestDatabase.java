@@ -22,7 +22,7 @@ public class TestDatabase
         cd1.setOwn(true);
         video1.setOwn(true);
         videoGame1.setOwn(true);
-        //db.list();
-        db.searchByTitle("Miss You Mix");
+        db.list();
+        db.searchByTitle("Miss You Mix").print();
 }
 }

@@ -33,8 +33,7 @@ public class Database
     Item searchByTitle(String theTitle){
         for(Iterator iter = items.iterator(); iter.hasNext(); )
         {
-            Item item = (Item)iter.next();
-            return false;
+             //Item.getTitle() = "";   // empty line between items
         }
     }
 }
