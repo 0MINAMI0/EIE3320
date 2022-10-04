@@ -31,8 +31,10 @@ public class Database
     }
     
     Item searchByTitle(String theTitle){
-        if (items.contains("Miss You Mix")){
-            
+        for(Iterator iter = items.iterator(); iter.hasNext(); )
+        {
+            Item item = (Item)iter.next();
+            return false;
         }
     }
 }
