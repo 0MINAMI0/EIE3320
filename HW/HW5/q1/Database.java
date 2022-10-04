@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 import java.util.Iterator;
-
+import java.util.regex.*;
 public class Database
 {
     private ArrayList<Item> items;
@@ -31,9 +31,13 @@ public class Database
     }
     
     Item searchByTitle(String theTitle){
-        for(Iterator iter = items.iterator(); iter.hasNext(); )
-        {
-             //Item.getTitle() = "";   // empty line between items
-        }
+    Pattern pattern = Pattern.compile(theTitle, Pattern.CASE_INSENSITIVE);
+    Matcher matcher = pattern.matcher(Item.getTitle());
+    boolean matchFound = matcher.find();
+    if(matchFound) {
+      System.out.println("Match found");
+    } else {
+      System.out.println("Match not found");
+    }
     }
 }
