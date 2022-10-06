@@ -4,7 +4,7 @@ import java.awt.*;
 public class Square extends Shape implements Drawable
 {
     private float length;
-    
+
     public Square(){
         readShape();
         computeArea();
@@ -40,7 +40,12 @@ public class Square extends Shape implements Drawable
         System.out.println("Perimeter of the square = " + perimeter);
     }
     
-    public void draw(){
-        Canvas canvas = new Canvas.getCanvas();
-    }
+    public void draw()
+    {
+            Canvas canvas = Canvas.getCanvas();
+            canvas.draw(this, "blue",
+                        new java.awt.Rectangle(60, 50, (int)length, (int)length));
+            canvas.wait(10);
+        }
 }
+

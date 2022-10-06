@@ -2,7 +2,7 @@ import java.awt.*;
 import java.awt.geom.*;
 import java.util.*;
 
-public class Circle extends Shape
+public class Circle extends Shape implements Drawable
 {
 
     private float radius;
@@ -12,6 +12,7 @@ public class Circle extends Shape
         computeArea();
         computePerimeter();
         displayShape();
+        draw();
     }
     
     public Circle(float r){
@@ -40,4 +41,11 @@ public class Circle extends Shape
         System.out.println("Perimeter of the circle = " + perimeter);
     
     }
+    public void draw()
+    {
+            Canvas canvas = Canvas.getCanvas();
+            canvas.draw(this, "blue",
+                        new Ellipse2D.Double(20, 60, 2*radius,  2*radius));
+            canvas.wait(10);
+        }
 }

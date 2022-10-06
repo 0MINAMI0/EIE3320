@@ -1,6 +1,6 @@
 import java.awt.*;
 import java.util.*;
-public class Rectangle extends Shape
+public class Rectangle extends Shape implements Drawable
 {
     private float length;
     private float width;
@@ -10,6 +10,7 @@ public class Rectangle extends Shape
         computeArea();
         computePerimeter();
         displayShape();
+        draw();
     }
     
     public Rectangle(float l, float w){
@@ -44,4 +45,12 @@ public class Rectangle extends Shape
         System.out.println("Perimeter of the rectangle = " + perimeter);
     
     }
+    public void draw()
+    {
+            Canvas canvas = Canvas.getCanvas();
+            canvas.draw(this, "blue",
+                        new java.awt.Rectangle(30, 20, (int)length, (int)width));
+            canvas.wait(10);
+    }
 }
+

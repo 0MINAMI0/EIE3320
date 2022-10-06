@@ -9,9 +9,7 @@ public class Canvas
 
     private static Canvas canvasSingleton;
 
-    /**
-     * Factory method to get the canvas singleton object.
-     */
+
     public static Canvas getCanvas()
     {
         if(canvasSingleton == null) {
@@ -169,11 +167,7 @@ public class Canvas
         }
     }
     
-    /************************************************************************
-     * Inner class CanvasPane - the actual canvas component contained in the
-     * Canvas frame. This is essentially a JPanel with added capability to
-     * refresh the image drawn on it.
-     */
+
     private class ShapeDescription
     {
         private java.awt.Shape shape;

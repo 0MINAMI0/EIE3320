@@ -2,7 +2,6 @@
 comment0.target=Canvas
 comment1.params=
 comment1.target=Canvas\ getCanvas()
-comment1.text=\n\ Factory\ method\ to\ get\ the\ canvas\ singleton\ object.\n
 comment2.params=title\ width\ height\ bgColour
 comment2.target=Canvas(java.lang.String,\ int,\ int,\ java.awt.Color)
 comment2.text=\n\ Create\ a\ Canvas.\n\ @param\ title\ \ title\ to\ appear\ in\ Canvas\ Frame\n\ @param\ width\ \ the\ desired\ width\ for\ the\ canvas\n\ @param\ height\ \ the\ desired\ height\ for\ the\ canvas\n\ @param\ bgClour\ \ the\ desired\ background\ colour\ of\ the\ canvas\n
