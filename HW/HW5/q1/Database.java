@@ -30,22 +30,46 @@ public class Database
         }
     }
     
-    /*public Item searchByTitle(String theTitle){
-    Pattern pattern = Pattern.compile(theTitle, Pattern.CASE_INSENSITIVE);
-    Matcher matcher = pattern.matcher(Item.getTitle());
-    boolean matchFound = matcher.find();
-    if(matchFound) {
-      System.out.println("Match found");
-    } else {
-      System.out.println("Match not found");
-    }
-    }*/
     public Item searchByTitle(String theTitle){
+        ArrayList<Item> itemlist=new ArrayList<Item>();
         for(Iterator iter = items.iterator(); iter.hasNext(); )
         {
-            if (iter == items.getTitle()){
-                
+            Item item = (Item)iter.next();
+            if(item.getTitle().equals(theTitle)){
+                itemlist.add(item);
+            }
+            }
+            return itemlist.get(0);
+        }
+    public Item searchByTilePattern(String Pat){
+        ArrayList<Item> itemlist=new ArrayList<Item>();
+        for(Iterator iter = items.iterator(); iter.hasNext();)
+        {
+            Pattern pattern = Pattern.compile(Pat, Pattern.CASE_INSENSITIVE);
+            Item item = (Item)iter.next();
+            Matcher matcher = pattern.matcher(item.getTitle());
+            boolean matchFound = matcher.find();
+            if(matchFound){
+                itemlist.add(item);
             }
         }
+        return itemlist.get(0);
     }
-}
+    public Item searchByPattern(String Pat){
+        ArrayList<Item> itemlist=new ArrayList<Item>();
+        for(Iterator iter = items.iterator(); iter.hasNext();)
+        {
+            Pattern pattern = Pattern.compile(Pat, Pattern.CASE_INSENSITIVE);
+            Item item = (Item)iter.next();
+            Matcher matcher1 = pattern.matcher(item.getTitle());
+            Matcher matcher2 = pattern.matcher(item.getComment());
+            boolean matchFound1 = matcher1.find();
+            boolean matchFound2 = matcher2.find();
+            if(matchFound1==true || matchFound2==true){
+                itemlist.add(item);
+            }
+        }
+        return itemlist.get(0);
+    }
+    }
+
