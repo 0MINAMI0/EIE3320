@@ -30,7 +30,7 @@ public class Database
         }
     }
     
-    Item searchByTitle(String theTitle){
+    /*public Item searchByTitle(String theTitle){
     Pattern pattern = Pattern.compile(theTitle, Pattern.CASE_INSENSITIVE);
     Matcher matcher = pattern.matcher(Item.getTitle());
     boolean matchFound = matcher.find();
@@ -39,5 +39,13 @@ public class Database
     } else {
       System.out.println("Match not found");
     }
+    }*/
+    public Item searchByTitle(String theTitle){
+        for(Iterator iter = items.iterator(); iter.hasNext(); )
+        {
+            if (iter == items.getTitle()){
+                
+            }
+        }
     }
 }
