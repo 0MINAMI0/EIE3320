@@ -12,13 +12,11 @@ public class q5
         int n = inputs[0];
         int m = inputs[1];
         int tem = n;
+        while (tem/m !=0){
+            n = n+tem/m;
+            tem = tem/m;
+        }
         
-        for(int i=n; i<1;){
-            i = i/m;
-            tem += i;
-            
+        System.out.print("candies: "+ n);
         }
-        System.out.print("candies"+tem);
-        }
-    }
-
+}
