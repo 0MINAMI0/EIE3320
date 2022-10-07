@@ -63,13 +63,15 @@ public class Database
             Item item = (Item)iter.next();
             Matcher matcher1 = pattern.matcher(item.getTitle());
             Matcher matcher2 = pattern.matcher(item.getComment());
+            String str = items.getClass().getName();
             boolean matchFound1 = matcher1.find();
             boolean matchFound2 = matcher2.find();
             if(matchFound1==true || matchFound2==true){
                 itemlist.add(item);
             }
-        }
-        return itemlist.get(0);
+        
+    
     }
-    }
-
+    return itemlist.get(0);
+}
+}
