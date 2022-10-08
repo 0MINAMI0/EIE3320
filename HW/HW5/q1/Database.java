@@ -69,8 +69,13 @@ public class Database
             if(matchFound1==true || matchFound2==true){
                 itemlist.add(item);
             }
-        
-    
+            switch(str)
+            {
+                case "CD":
+                    {
+                      boolean flag1 = (pattern.matcher(item.getArtist())).find();  
+                    }
+            }
     }
     return itemlist.get(0);
 }
