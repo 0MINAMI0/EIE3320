@@ -41,15 +41,14 @@ public class NumberDisplay
     {
         if(value < 10)
             return "0" + value;
-        else if(value > 12){
-            return " "+ (value-12);
-        }
         else
             return "" + value;
-
     }
 
- 
+    /**
+     * Set the value of the display to the new specified value. If the new
+     * value is less than zero or over the limit, do nothing.
+     */
     public void setValue(int replacementValue)
     {
         if((replacementValue >= 0) && (replacementValue < limit))

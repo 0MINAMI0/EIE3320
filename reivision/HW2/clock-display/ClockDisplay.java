@@ -78,9 +78,7 @@ public class ClockDisplay
      */
     private void updateDisplay()
     {
-        if (hours < 12){
         displayString = hours.getDisplayValue() + ":" + 
                         minutes.getDisplayValue();
     }
-}
 }
