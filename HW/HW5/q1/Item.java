@@ -4,6 +4,7 @@ public class Item
     private int playingTime;
     private boolean gotIt;
     private String comment;
+    private String artist;
     public Item(String theTitle, int time)
     {
         title = theTitle;
@@ -16,9 +17,6 @@ public class Item
         return title;
     }
     
-    /**
-     * Enter a comment for this item.
-     */
     public void setComment(String comment)
     {
         this.comment = comment;
@@ -46,6 +44,16 @@ public class Item
     public boolean getOwn()
     {
         return gotIt;
+    }
+    
+    public void setArtist(String in)
+    {
+        artist = in;
+    }
+    
+    public String getArtist()
+    {
+        return artist;
     }
 
     /**
