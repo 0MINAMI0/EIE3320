@@ -70,7 +70,8 @@ public class Database
                 case "CD":
                     boolean CDFound1 = (pattern.matcher(item.getTitle())).find();
                     boolean CDFound2 = (pattern.matcher(item.getArtist())).find();
-                    if(CDFound1|| CDFound2){
+                    boolean CDFound3 = (pattern.matcher(item.getComment())).find();
+                    if(CDFound1 || CDFound2 || CDFound3 ){
                         itemlist.add(item);  
                     }
                     break;
@@ -78,7 +79,8 @@ public class Database
                 case "Video":
                     boolean VideoFound1 = (pattern.matcher(item.getTitle())).find();
                     boolean VideoFound2 = (pattern.matcher(item.getComment())).find();
-                    if(VideoFound1|| VideoFound2){
+                    boolean VideoFound3 = (pattern.matcher(item.getDirector())).find();
+                    if(VideoFound1 || VideoFound2){
                         itemlist.add(item);  
                     }
                     break;

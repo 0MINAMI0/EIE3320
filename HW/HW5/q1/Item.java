@@ -5,6 +5,7 @@ public class Item
     private boolean gotIt;
     private String comment;
     private String artist;
+    private String director;
     public Item(String theTitle, int time)
     {
         title = theTitle;
@@ -16,7 +17,7 @@ public class Item
     public String getTitle() {
         return title;
     }
-    
+
     public void setComment(String comment)
     {
         this.comment = comment;
@@ -45,15 +46,25 @@ public class Item
     {
         return gotIt;
     }
-    
+
     public void setArtist(String in)
     {
         artist = in;
     }
-    
+
+    public void setDirector(String in)
+    {
+        artist = in;
+    }
+
     public String getArtist()
     {
         return artist;
+    }
+
+    public String getDirector()
+    {
+        return director;
     }
 
     /**
@@ -70,6 +81,6 @@ public class Item
         System.out.println("Playing time: " + playingTime);
         System.out.println("Comment: " + comment);
     }
-    
+
 }
 
