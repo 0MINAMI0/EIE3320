@@ -86,9 +86,9 @@ public class Database
                     break;
 
                 case "VideoGame":
-                    boolean VG1 = (pattern.matcher(item.getTitle())).find();
-                    boolean VG2 = (pattern.matcher(item.getComment())).find();
-                    if(VG1||VG2){
+                    boolean VideoGameFound1 = (pattern.matcher(item.getTitle())).find();
+                    boolean VideoGameFound2 = (pattern.matcher(item.getComment())).find();
+                    if(VideoGameFound1||VideoGameFound2){
                         itemlist.add(item);
                     }
                 break;
@@ -97,34 +97,6 @@ public class Database
         return itemlist.get(0);
     }
     
-    
-    // public Item searchByPattern(String Pat){
-        // ArrayList<Item> itemlist=new ArrayList<Item>();
-        // for(Iterator iter = items.iterator(); iter.hasNext(); )
-        // {
-            // Pattern pattern = Pattern.compile(Pat, Pattern.CASE_INSENSITIVE);
-            // Item item = (Item)iter.next();
-            // String classname= item.getClass().getName();
-            // switch(classname){
-                // case "CD":
-                    // boolean CD1 = (pattern.matcher(item.getTitle())).find();
-                    // boolean CD2 = (pattern.matcher(item.getArtist())).find();
-                    // if(CD1||CD2){
-                        // itemlist.add(item);
-                    // }
-                // break;
-                // case "VideoGame":
-                    // boolean VG1 = (pattern.matcher(item.getTitle())).find();
-                    // boolean VG2 = (pattern.matcher(item.getComment())).find();
-                    // if(VG1||VG2){
-                        // itemlist.add(item);
-                    // }
-                // break;
-            // }
-            
-        // }
-        // return itemlist.get(0);
-    // }
     
     
 }
