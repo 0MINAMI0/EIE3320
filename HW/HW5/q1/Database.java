@@ -4,7 +4,7 @@ import java.util.regex.*;
 public class Database
 {
     private ArrayList<Item> items;
-    public Database()
+    public Database() 
     {
         items = new ArrayList<Item>();
     }
@@ -80,7 +80,7 @@ public class Database
                     boolean VideoFound1 = (pattern.matcher(item.getTitle())).find();
                     boolean VideoFound2 = (pattern.matcher(item.getComment())).find();
                     boolean VideoFound3 = (pattern.matcher(item.getDirector())).find();
-                    if(VideoFound1 || VideoFound2){
+                    if(VideoFound1 || VideoFound2 || VideoFound3){
                         itemlist.add(item);  
                     }
                     break;
@@ -88,15 +88,13 @@ public class Database
                 case "VideoGame":
                     boolean VideoGameFound1 = (pattern.matcher(item.getTitle())).find();
                     boolean VideoGameFound2 = (pattern.matcher(item.getComment())).find();
-                    if(VideoGameFound1||VideoGameFound2){
+                    if(VideoGameFound1||VideoGameFound2||VideoGameFound2){
                         itemlist.add(item);
                     }
-                break;
+                    break;
             }
         }
         return itemlist.get(0);
     }
-    
-    
-    
+
 }

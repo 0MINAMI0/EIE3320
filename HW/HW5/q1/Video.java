@@ -7,6 +7,8 @@ public class Video extends Item
     {
         super(theTitle, time);
         director = theDirector;
+        super.setDirector(director);
+
     }
     public String getDirector()
     {
