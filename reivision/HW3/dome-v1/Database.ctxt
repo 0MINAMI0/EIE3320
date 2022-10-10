@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Database()
+comment0.text=\r\n\ Construct\ an\ empty\ Database.\r\n
+comment1.params=theCD
+comment1.target=void\ addCD(CD)
+comment1.text=\r\n\ Add\ a\ CD\ to\ the\ database.\r\n
+comment2.params=theVideo
+comment2.target=void\ addVideo(Video)
+comment2.text=\r\n\ Add\ a\ video\ to\ the\ database.\r\n
+comment3.params=
+comment3.target=void\ list()
+comment3.text=\r\n\ Print\ a\ list\ of\ all\ currently\ stored\ CDs\ and\ videos\ to\ the\r\n\ text\ terminal.\r\n
+numComments=4
