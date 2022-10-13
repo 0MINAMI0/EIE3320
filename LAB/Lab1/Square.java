@@ -1,3 +1,5 @@
+//LYU Hao 20042543D
+//Sung Siu Fung 20043503D
 import java.util.*;
 import java.awt.*;
 
@@ -26,6 +28,7 @@ public class Square extends Shape implements Drawable
         length = input.nextFloat();
         System.out.println();
     }
+    
     
     public void computeArea(){
         area = length*length;
