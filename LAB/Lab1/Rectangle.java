@@ -1,3 +1,6 @@
+//LYU Hao 20042543D
+//Sung Siu Fung 20043503D
+
 import java.awt.*;
 import java.util.*;
 public class Rectangle extends Shape implements Drawable
