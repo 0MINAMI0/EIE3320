@@ -1,9 +1,0 @@
-/**
- * 
- */
-/**
- * @author MINAMI
- *
- */
-module asd {
-}
