@@ -6,6 +6,7 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="D:\code\Github\EIE3320-JAVA\LAB\Lab2\Code templates"/>
 			<item value="/Users/haolyu/Desktop/EIE3320-JAVA/LAB/Lab2/Code templates"/>
 		</list>
 	</section>
