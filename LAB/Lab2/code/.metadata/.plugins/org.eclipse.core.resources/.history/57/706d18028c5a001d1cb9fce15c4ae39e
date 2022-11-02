@@ -1,0 +1,29 @@
+import java.awt.*;
+import javax.swing.*;
+
+
+public class TestPanels extends JFrame {
+
+	public TestPanels() {
+		JPanel p1 = new JPanel();
+		p1.setLayout(new GridLayout(4,1));
+		p1.add(add(new JButton("First Name")));
+		p1.add(add(new JLabel("First Name")));
+		p1.add(add(new JLabel("First Name")));
+		
+		
+		JPanel p2 = new JPanel(new BorderLayout());
+		p2.add(p1,BorderLayout.EAST);
+	}
+	
+	public static void main(String[] args) {
+		TestPanels frame = new TestPanels();
+		frame.setTitle("The Front View of a Microwave Oven");
+		frame.setSize(1000,600);
+		frame.setLocationRelativeTo(null);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setVisible(true);
+	}
+	
+	
+}

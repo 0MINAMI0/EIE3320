@@ -1,0 +1,12 @@
+import java.awt.*;
+import javax.swing.*;
+
+public class TestPanels extends JFrame {
+	public TestPanels() {
+		JPanel p1 = new JPanel();
+		p1.setLayout(new GridLayout(4,0));
+		p1.add(add(new JLabel("First Name")));
+		p1.add(add(new JLabel("First Name")));
+		p1.add(add(new JLabel("First Name")));
+	}
+}
