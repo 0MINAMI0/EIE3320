@@ -1,4 +1,0 @@
-INDEX VERSION 1.131+/Users/haolyu/Desktop/EIE3320-JAVA/LAB/Lab2/Code templates/.metadata/.plugins/org.eclipse.jdt.core
-1865797976.index
-3981961839.index
-4155219971.index
