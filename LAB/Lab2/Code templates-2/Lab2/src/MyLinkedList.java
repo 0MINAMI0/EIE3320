@@ -191,12 +191,6 @@ public class MyLinkedList<E> implements MyList<E> {
 		if (index < 0 || index >= size) {
 			return null;
 		}
-		else if (index == 0) {
-			return getFirst();
-		}
-		else if (index == size - 1) {
-			return getLast();
-		}
 		else {
 			Node<E> current = head;
 			for (int i = 0; i < index; i++) {
@@ -236,14 +230,11 @@ public class MyLinkedList<E> implements MyList<E> {
 	public E set(int index, E e) {
 		// Left as an exercise
 		Node<E> current = head;
-		for (int i=0;i<index;i++) {
-			if(get(i).equals(index)) {
-				current.element=e;
-				return current.element;
-			}
-			current=current.next;
+		for (int i = 0; i < index; i++) {
+			current = current.next;
 		}
-		return null;
+		current.element = e;
+		return current.element;
 	}
 
 	@Override /** Override iterator() defined in Iterable */

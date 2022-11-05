@@ -1,3 +1,5 @@
+/Book.class
+/MyFrame.class
 /MyLinkedList$LinkedListIterator.class
 /MyLinkedList$Node.class
 /MyLinkedList.class
@@ -7,6 +9,7 @@
 /TestMyLinkedList.class
 /TestMyLinkedListExtra.class
 /TestMyQueue.class
-/.classpath
-/.gitignore
-/.project
+/TestPanels$1.class
+/TestPanels$2.class
+/TestPanels$3.class
+/TestPanels.class
