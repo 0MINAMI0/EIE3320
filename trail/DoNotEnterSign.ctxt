@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=DoNotEnterSign
+comment0.text=\r\n\ A\ panel\ maintaining\ a\ picture\ of\ a\ Do\ Not\ Enter\ sign.\r\n
+comment1.params=g
+comment1.target=void\ paintComponent(java.awt.Graphics)
+comment1.text=\r\n\ Called\ by\ the\ runtime\ system\ whenever\ the\ panel\ needs\ painting.\r\n
+comment2.params=args
+comment2.target=void\ main(java.lang.String[])
+comment2.text=\r\n\ A\ little\ driver\ in\ case\ you\ want\ a\ stand-alone\ application.\r\n
+numComments=3
